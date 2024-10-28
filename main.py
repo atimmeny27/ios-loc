@@ -11,4 +11,4 @@ if __name__ == "__main__":
 
     app_server = AppServer(host="0.0.0.0", port=5432)
     app_server.location_simulator = location_simulator
-    app_server.run(debug=True)
+    app_server.run(debug=False)
