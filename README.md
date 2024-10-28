@@ -9,6 +9,10 @@ Web UI             |  Phone View
 :-------------------------:|:-------------------------:
 ![](imgs/berlin-route-demo.png)  |  ![](imgs/berlin-route-demo-gmaps.jpg)
 
+## pymobiledevice3
+
+A majority of the heavy lifting for changing the device location is generously provided by [pymobiledevice3](https://github.com/doronz88/pymobiledevice3). Any problems related to `pymobiledevice3` should be dealt with there.
+
 ## Installation
 
 To get started, make sure you have Python 3 installed. Then follow these steps:
