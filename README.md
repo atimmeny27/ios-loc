@@ -34,7 +34,7 @@ To get started, make sure you have Python 3 installed. Then follow these steps:
     ```bash
     python main.py
     ```
-    See https://github.com/alexdalat/ios-virtual-loc/blob/d4caf7dba2b81363f28bccead66611149874ef7e/TunnelService.py#L27 for the sudo command.
+    The following: https://github.com/alexdalat/ios-virtual-loc/blob/d4caf7dba2b81363f28bccead66611149874ef7e/TunnelService.py#L27 is the only sudo command being executed.
 
 2. Visit the URL displayed in the console (usually `http://127.0.0.1:5432`) in your browser.
 
@@ -44,4 +44,4 @@ To get started, make sure you have Python 3 installed. Then follow these steps:
 
 ![Console Output Example](imgs/berlin-route-demo.png)
 
-![Route Map Example](imgs/berlin-route-demo-gmaps.png)
+![Route Map Example](imgs/berlin-route-demo-gmaps.jpg)
