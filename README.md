@@ -5,6 +5,10 @@
 - **Route Planning**: Simulates a journey, mimicking a realistic route between points.
 - **Simple Integration**: Easy-to-use Python script with an even easier to use HTML interface.
 
+Web UI             |  Phone View
+:-------------------------:|:-------------------------:
+![](imgs/berlin-route-demo.png)  |  ![](imgs/berlin-route-demo-gmaps.jpg)
+
 ## Installation
 
 To get started, make sure you have Python 3 installed. Then follow these steps:
@@ -39,9 +43,3 @@ To get started, make sure you have Python 3 installed. Then follow these steps:
 2. Visit the URL displayed in the console (usually `http://127.0.0.1:5432`) in your browser.
 
 3. Double click to change device location, the rest is self-explanatory.
-
-## Pictures
-
-![Console Output Example](imgs/berlin-route-demo.png)
-
-![Route Map Example](imgs/berlin-route-demo-gmaps.jpg)
