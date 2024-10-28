@@ -53,7 +53,6 @@ export class MapManager {
   }
 
   setDeviceLocation(lat, lng) {
-
     fetch("/set_location", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
