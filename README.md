@@ -3,7 +3,7 @@
 ## Features
 - **iOS Location Update**: Wired and wireless, real-time updates to the device’s location on iOS 17 and iOS 18.
 - **Route Planning**: Simulates a journey, mimicking a realistic route between points.
-- **Simple Integration**: Easy-to-use Python script with an even easier to use HTML interface.
+- **Simple Integration**: Easy-to-use Python script with an even easier-to-use HTML interface.
 
 Web UI             |  Phone View
 :-------------------------:|:-------------------------:
@@ -38,7 +38,7 @@ To get started, make sure you have Python 3 installed. Then follow these steps:
 
 ## Usage
 
-1. Run the main script, will prompt for sudo access:
+1. Run the main script, it will prompt for sudo access:
     ```bash
     python main.py
     ```
@@ -46,4 +46,4 @@ To get started, make sure you have Python 3 installed. Then follow these steps:
 
 2. Visit the URL displayed in the console (usually `http://127.0.0.1:5432`) in your browser.
 
-3. Double click to change device location, the rest is self-explanatory.
+3. Double-click to change the device location. The iOS device is blue and the laptop (if available) appears in red. The rest is self-explanatory.
