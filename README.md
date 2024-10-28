@@ -9,6 +9,10 @@ Web UI             |  Phone View
 :-------------------------:|:-------------------------:
 ![](imgs/berlin-route-demo.png)  |  ![](imgs/berlin-route-demo-gmaps.jpg)
 
+## BETA
+
+This project is very much in early development at the moment. It has only been tested on iOS 18.0.1 and MacOS 14.5. Please open an issue if problems arise.
+
 ## pymobiledevice3
 
 A majority of the heavy lifting for changing the device location is generously provided by [pymobiledevice3](https://github.com/doronz88/pymobiledevice3). Any problems related to `pymobiledevice3` should be dealt with there.
