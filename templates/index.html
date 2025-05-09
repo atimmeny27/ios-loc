@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Location Simulator</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-    <script type="module" src="{{url_for('static', filename='main.js')}}""></script>
-
+    
     <style>
         #map { height: 100vh; }
         #controls {
@@ -89,9 +88,31 @@
     </div>
 </div>
 
+<!-- Mapbox JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpbW1lbnkiLCJhIjoiY21haDhoN291MDJyajJpb2k1OGR0ZXZ1NiJ9.x6UTBaj6mWYRp7Z8b3eHAQ'
 
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v10',
+    center: [-73.9851, 40.7589],
+    zoom: 12
+  });
+
+  map.on('click', function (e) {
+    const { lng, lat } = e.lngLat;
+    console.log('Clicked:', lat, lng);
+
+    fetch('/set_location', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lat, lon: lng })
+    }).then(() => toastr.success(`Location set to: ${lat}, ${lng}`));
+  });
+</script>
+    
 </body>
 </html>
 
